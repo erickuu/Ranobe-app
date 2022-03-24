@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <main>
+      <section id="main__section">
+
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <% for(let novels = 0 ; novels < data.length; novels++){%>
+            <div class="div__card d-flex w-58">
+                <div class="card__image">
+                  <img class="w-58" src=<%=data[novels].Image%> alt=<%=data[novels].Name%>>
+                </div>
+                <div class="card__info">
+                  <h2><%=data[novels].Name%></h2>
+                  <p>Descriptio short</p>
+                </div>
+            </div>
+          <%}%>        
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
