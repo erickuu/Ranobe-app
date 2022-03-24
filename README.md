@@ -1,2 +1,3 @@
-# Ranobeapp
+# Ranobe App
 I'm building an API to lightnovels in English and Japanese ...
+Update :25 Marzo 2022 ✏️
