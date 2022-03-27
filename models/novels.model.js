@@ -1,5 +1,6 @@
 module.exports = {
-	get:(connection,data)=>{
-		connection.query("SELECT * FROM novels",data);
+	get:async (connection,data)=>{
+		await connection.query("SELECT * FROM novels",data);
+		return data;
 	}
 }

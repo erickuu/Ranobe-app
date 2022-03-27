@@ -6,24 +6,21 @@
 	 <script src="https://cdn.tailwindcss.com"></script>
 	<title>test Tailwindcss</title>
 </head>
-<body>
+<body  class="bg-no-repeat bg-fixed bg-cover" style="background-image: url('https://i.imgur.com/6bv85zs.jpg');">
 	<main>
-		<section class="grid grid-cols-3 sm:grid-cols-3 md-grid-cols-4 gap-2 ">
-
-			<div class="section__card flex flex-row h-44 bg-yellow-400 rounded">
-				<div class="card__img mr-3">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU" class="h-full" alt="">
-				</div>
-				<div class="card__info flex flex-col ">
-					<h1>Title</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Officiis!</p>
-					<div class="w-full h-full mt-2">
-						<a href="" class="w-full h-full p-2 rounded bg-white">Download Free !</a>
-					</div>
-				</div>
+		<section class="flex flex-row ">
+			<div class="text-center w-2/5 mt-28 h-auto bg-white rounded p-4  font-sans">
+				<h1 class="text-3xl">Nos perdimos Baka 😤💛 </h1>
+				<p class="text-center"><strong>Error 404</strong></p>
+				<p>Esta pagina no existe, porfavor regrese ...</p>
+				<button class="text-center p-4 m-auto bg-yellow-400 hover:bg-yellow-700">Inicio</button>
 			</div>
-
 		</section>
 	</main>
 </body>
 </html>
+
+<!-- 
+app.get('*', function(req, res){
+  res.send('what???', 404);
+}); -->
