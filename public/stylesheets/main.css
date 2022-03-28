@@ -1,0 +1,14 @@
+:root{
+  --color-primary : #fce047;
+  --color-primary-hover : #fcdd2c;
+  --color-dark: #111111;
+
+}
+body{
+  background-color: var(--color-primary);
+}
+.button{
+  width: 160px;
+  margin-left: 550px;
+}
+
