@@ -9,13 +9,14 @@
     <title><%= title %></title>
   </head>
 
-  <body class="bg-gray-900">
+  <body class="bg-yellow-300">
 
     <!-- Pequeno navbar con tailwindCss -->
-  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 mb-7 shadow shadow-sm shadow-md rounded dark:bg-gray-800">
+ 
+<nav class="bg-white px-2 sm:px-4 py-2.5 shadow shadow-sm shadow-md dark:bg-white">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="/" class="flex items-center">
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FandomAnimes</span>
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><img src="/images/icon-flat.png" width="70px" alt=""></span>
       </a>
       <div class="flex md:order-2">
           <button type="button" class="text-white bg-yellow-300 hover:bg-yellow-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
@@ -24,32 +25,69 @@
       <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="/" class="block py-2 pr-4 pl-3 text-white bg-yellow-500 rounded md:bg-transparent md:text-yellow-500 md:p-0 dark:text-white" aria-current="page">Inicio</a>
+            <a href="/" class="block py-2 pr-4 pl-3 rounded text-yellow-500 md:p-0  hover:text-gray-500" aria-current="page">Inicio</a>
           </li>
           <li>
-            <a href="https://FandomAnimes.blogspot.com" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+            <a href="https://FandomAnimes.blogspot.com" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-500  md:border-0  md:p-0 hover:text-gray-500">Blog</a>
           </li>
           <li>
-            <a href="https://github.com/erickuu/" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Autor</a>
+            <a href="https://github.com/erickuu/" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-500 md:p-0 hover:text-gray-500 ">Github and Project</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
 <!-- Comienzo de la seccion Principal -->
     <main>
-      <section id="" class="grid grid-cols-2 gap-4">
-
+      <!-- Section about welcome -->
+      <section class="main__section-welcome w-full h-screen flex flex-row items-center mt-20 justify-center ">
+          <div class="section__content-card w-3/5 h-3/5 mx-auto bg-white shadow px-11 pt-10 relative rounded-2xl text-lg ">
+            <h1 class="text-3xl text-center mb-6"><strong>FandomAnime Community</strong></h1>
+            <h2 class="text-3xl text-center"><strong>¿Quienes somos?</strong></h2>
+              <p class="leading-8">Somos una comunidad 🌎, somos personas diferentes al resto, nos une la pasion de la lectura, sin embargo estamos abiertos a todo tipo de contenido que sea de interes.</p>
+            <h2 class="text-3xl text-center"><strong>¿Traducimos novelas?</strong></h2>
+              <p class="leading-9">En fandomAnimes, nos dedicamos a entregar contenido, siempre en espanol, sin embargo su traduccion es hecha por personas externas.</p>
+            <h2 class="text-3xl text-center"><strong>¿Que tipo de novelas?</strong></h2>
+              <p class="leading-8">De todo tipo mas que nada novelas ligeras y para todo publico en especial nos gustan los generos de : fantasia,romance,accion,aventura,drama, y muchos otros ... 💛📚 </p>
+            <div class="-top-24 right-0 absolute">
+              <img src="images/fox-flat.png" width="200px"  alt="fox">
+            </div>
+            <div class="absolute left-0 -top-72">
+              <img src="images/nora-flat.png" width="200px"  alt="zero darling in the friendxx">
+            </div>
+          </div>
+      </section>
+      <!-- Section Information about site -->
+      <section class="w-full h-screen grid grid-cols-2 text-lg ">
+        <div class="w-full h-full bg-white flex flex-col justify-center  items-center p-8 text-left ">
+          <h2 class="text-center text-3xl mb-4 mt-20 "><strong>Contactanos</strong></h2>
+          <p>Contactanos a traves de las siguientes redes sociales y cuentanos, ¿que novelas ligeras te gustaria ver en la plataforma?. Y recuerda : "Lo unico imposible es lo que no intestas"</p>
+          <p><strong>Author : +573148121439</strong></p>
+          <p>
+            <img src="public/images/hidden-flat.png" width="160px" class="" alt="">
+          </p>
+        </div>
+        <div class="w-full bg-yellow-300  flex  flex-col justify-center items-center  p-8 h-full">
+          <h2 class="text-center text-3xl mb-4"><strong>Redes Sociales</strong></h2>
+          <p><strong>Instagram</strong>:@fandomanimes1</p>
+          <p><strong>Blogspot</strong> :fandomanimes.blogspot.com</p>
+          <p><strong>Wordpress</strong>:fandomanimes.wordpress.com</p>
+          <p><strong>Email</strong>    :erickgraterolbarico@gmail.com </p>
+        </div>
+      </section>
+      <!-- Section about novels and downloads -->
+      <section id="" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-20">
           <% for(let novels = 0 ; novels < data.length; novels++){%>         
-          <!-- Renderizando card de la base de datos -->
-            <div class="section__card flex flex-row w-full h-52 bg-gray-50 rounded">
+          <!-- Card ITEMS -->
+            <div class="section__card flex flex-col w-full h-96 bg-gray-50 rounded-2xl">
               <!-- Card IMAGES -->
-              <div class="card__img mr-3 w-2/4">
-                <img src="<%=data[novels].Image%>" class=" w-full h-full"  alt="">
+              <div class="card__img mr-3 w-full">
+                <img src="<%=data[novels].Image%>" width="150px" class=" w-full h-full"  alt="">
               </div>
               <!-- CARD INFORMATION -->
-              <div class="card__info flex flex-col w-2/4 text-left pt-4 overflow-hidden">
+              <div class="card__info flex flex-col w-full h-full text-left pt-2 px-2 overflow-hidden">
                 <h1><strong><%=data[novels].Name%></strong></h1>
                 <p>Volumenes : <%=data[novels].Vols%></p>
                 <p>Subido :<span> <%=data[novels].Tag%></span></p>
@@ -57,11 +95,11 @@
                   <a href="<%=data[novels].Link%>" target="_blank" class="w-full h-full p-2 rounded bg-yellow-300 hover:bg-yellow-700  font-medium">Descargar</a>
                 </div>
               </div>
-
             </div>
           <%}%> 
-
       </section>
+
+    
     </main>
   </body>
 </html>
