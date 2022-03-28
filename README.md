@@ -1,6 +1,4 @@
 # Ranobe App
-En construccion ...
-Imagen ...
-
-<img src="https://i.imgur.com/Dw35J2n.png">
-Update :25 Marzo 2022 ✏️
+<p>En construccion API FANDOMANIMES.blogspot.com</p>
+<p>Beta en desarrollo</p>
+<img src="https://i.imgur.com/6o2oXBS.png">
