@@ -3,14 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "watch": "nodemon ./bin/www",
+    "linter": "npx tailwindcss -i ./public/stylesheets/main.css ./public/stylesheets/main.bundle.css --watch",
     "start": "node ./bin/www",
     "config/": "npx eslint config/**",
     "controllers/": "npx eslint controllers/**",
     "models/": "npx eslint models/**",
-    "config/Fix": "npx eslint config/** --fix",
-    "controllers/Fix": "npx eslint controllers/** --fix",
-    "models/Fix": "npx eslint models/** --fix"
+    "routes/": "npx eslint routes/**"
   },
   "dependencies": {
     "cookie-parser": "1.4.4",
@@ -24,7 +22,6 @@
   },
   "devDependencies": {
     "eslint": "^8.12.0",
-    "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23"
   }
 }

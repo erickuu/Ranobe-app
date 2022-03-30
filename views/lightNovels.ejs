@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/stylesheets/main.bundle.css">
+	<title><%=title%></title>
+</head>
+<body class="bg-yellow-300">
+<main>	
+  <!-- Section about novels and downloads -->
+  <section id="" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-20">
+      <% for(let novels = 0 ; novels < data.length; novels++){%>         
+      <!-- Card ITEMS -->
+        <div class="section__card flex flex-col w-full h-96 bg-gray-50 rounded-2xl">
+          <!-- Card IMAGES -->
+          <div class="card__img mr-3 w-full">
+            <img src="<%=data[novels].Image%>" width="150px" class=" w-full h-full"  alt="">
+          </div>
+          <!-- CARD INFORMATION -->
+          <div class="card__info flex flex-col w-full h-full text-left pt-2 px-3 overflow-x-hidden overflow-y-auto">
+            <h1><strong><%=data[novels].Name%></strong></h1>
+            <p>Volumenes : <%=data[novels].Vols%></p>
+            <p><span> <%=data[novels].Tag%></span></p>
+            <div class=`"w-full h-full mt-4">
+              <a href="<%=data[novels].Link%>" target="_blank" class="w-full h-full p-2 rounded bg-yellow-300 hover:bg-yellow-700  font-medium">Descargar</a>
+            </div>
+          </div>
+        </div>
+      <%}%> 
+  </section>
+</main>
+</body>
+</html>

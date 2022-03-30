@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/images/icon-flat.png">
-    <link rel='stylesheet' href='/stylesheets/main.bundle.css'/>
+    <link rel='stylesheet' href='./stylesheets/main.bundle.css'/>
     <title><%= title %></title>
   </head>
 
@@ -18,7 +18,7 @@
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><img src="/images/icon-flat.png" width="70px" alt=""></span>
       </a>
       <div class="flex md:order-2">
-          <button type="button" class="text-white bg-yellow-300 hover:bg-yellow-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
+          <button type="button" class="text-white bg-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
             <a href="https://erickuu.github.io/" target="_blank" class="w-full h-full text-black">Erickuu Autor</a></button>
       </div>
       <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
@@ -65,11 +65,11 @@
           <p>Contactanos a traves de las siguientes redes sociales y cuentanos, ¿que novelas ligeras te gustaria ver en la plataforma?. Y recuerda : "Lo unico imposible es lo que no intestas"</p>
           <p><strong>Author : +573148121439</strong></p>
           <p>
-            <img src="public/images/hidden-flat.png" width="160px" class="" alt="">
+            <img src="./images/hidden-flat.png" width="160px" class="" alt="">
           </p>
-          <div class="button ">
+          <div class="button mt-20 ">
             <button type="button" class="bg-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
-              <a href="https://erickuu.github.io/" target="_blank" class="w-full h-full text-black">Descargar Novelas
+              <a href="/light-novels" class="w-full h-full text-black">Descargar Novelas
               </a>
             </button>
           </div>
@@ -82,30 +82,7 @@
           <p><strong>Email</strong>    :erickgraterolbarico@gmail.com </p>
         </div>
       </section>
-      <!-- Section about novels and downloads -->
-      <section id="" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-20">
-          <% for(let novels = 0 ; novels < data.length; novels++){%>         
-          <!-- Card ITEMS -->
-            <div class="section__card flex flex-col w-full h-96 bg-gray-50 rounded-2xl">
-              <!-- Card IMAGES -->
-              <div class="card__img mr-3 w-full">
-                <img src="<%=data[novels].Image%>" width="150px" class=" w-full h-full"  alt="">
-              </div>
-              <!-- CARD INFORMATION -->
-              <div class="card__info flex flex-col w-full h-full text-left pt-2 px-2 overflow-hidden">
-                <h1><strong><%=data[novels].Name%></strong></h1>
-                <p>Volumenes : <%=data[novels].Vols%></p>
-                <p>Subido :<span> <%=data[novels].Tag%></span></p>
-                <div class="w-full h-full mt-4">
-                  <a href="<%=data[novels].Link%>" target="_blank" class="w-full h-full p-2 rounded bg-yellow-300 hover:bg-yellow-700  font-medium">Descargar</a>
-                </div>
-              </div>
-            </div>
-          <%}%> 
-      </section>
-
     
     </main>
-    <!-- Tailwind loading after finish DOM loaded -->
   </body>
 </html>
