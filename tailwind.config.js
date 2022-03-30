@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./views/*.{html,ejs,js}",
-    "./public/*.{ejs,html}"
+    "./public/.{ejs,html}",
+    "./public/**/*.{ejs,html}"
   ],
   theme: {
     extend: {},
