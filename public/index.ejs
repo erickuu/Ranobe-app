@@ -8,29 +8,29 @@
     <title><%= title %></title>
   </head>
 
-  <body >
+  <body class="bg-black">
 <!-- class="bg-yellow-300" -->
     <!-- Pequeno navbar con tailwindCss -->
  
-<nav class="bg-white px-2 sm:px-4 py-2.5 shadow shadow-sm shadow-md dark:bg-white">
+<nav class="bg-black px-2 sm:px-4 py-2.5 shadow shadow-sm shadow-md ">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="/" class="flex items-center">
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><img src="/images/icon-flat.png" width="70px" alt=""></span>
       </a>
       <div class="flex md:order-2">
-          <button type="button" class="text-white bg-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
+          <button type="button" class="text-white bg-yellow-300  hover:bg-gray-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
             <a href="https://erickuu.github.io/" target="_blank" class="w-full h-full text-black">Erickuu Autor</a></button>
       </div>
       <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <a href="/" class="block py-2 pr-4 pl-3 rounded text-yellow-500 md:p-0  hover:text-gray-500" aria-current="page">Inicio</a>
+            <a href="/" class="block py-2 pr-4 pl-3 rounded text-yellow-300 md:p-0  hover:text-gray-500" aria-current="page">Inicio</a>
           </li>
           <li>
-            <a href="https://FandomAnimes.blogspot.com" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-500  md:border-0  md:p-0 hover:text-gray-500">Blog</a>
+            <a href="https://FandomAnimes.blogspot.com" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-300  md:border-0  md:p-0 hover:text-gray-500">Blog</a>
           </li>
           <li>
-            <a href="https://github.com/erickuu/" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-500 md:p-0 hover:text-gray-500 ">Github and Project</a>
+            <a href="https://github.com/erickuu/" target="_blank" class="block py-2 pr-4 pl-3 text-yellow-300 md:p-0 hover:text-gray-500 ">Github and Project</a>
           </li>
         </ul>
       </div>
@@ -67,20 +67,22 @@
           <p>
             <img src="./images/hidden-flat.png" width="160px" class="" alt="">
           </p>
-          <div class="button mt-20 ">
-            <button type="button" class="bg-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 text-black">
-              <a href="/light-novels" class="w-full h-full text-black">Descargar Novelas
-              </a>
-            </button>
-          </div>
+          
         </div>
-        <div class="w-full bg-yellow-300  flex  flex-col justify-center items-center  p-8 h-full">
+        <div class="w-full flex flex-col justify-center items-center text-white p-8 h-full">
           <h2 class="text-center text-3xl mb-4"><strong>Redes Sociales</strong></h2>
           <p><strong>Instagram</strong>:@fandomanimes1</p>
           <p><strong>Blogspot</strong> :fandomanimes.blogspot.com</p>
           <p><strong>Wordpress</strong>:fandomanimes.wordpress.com</p>
           <p><strong>Email</strong>    :erickgraterolbarico@gmail.com </p>
+          <div class="button mt-20 w-full flex justify-center ">
+            <button type="button" class="bg-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  text-black">
+              <a href="/light-novels" class="w-full h-full text-black">Descargar Novelas
+              </a>
+            </button>
+          </div>
         </div>
+
       </section>
     
     </main>
