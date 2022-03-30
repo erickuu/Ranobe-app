@@ -17,8 +17,11 @@ connection.connect(
 		case err == true:
 			console.log('\x1b[1;32m','Connection Success !! ');
 			break;
+		case err.fatal == true:
+			console.log('\x1b[1;31m','Connection LOST !! ');
+			break;
 		default:
-			console.log('Default');
+			console.log('.... I dont know');
 			break;
 		}
 
