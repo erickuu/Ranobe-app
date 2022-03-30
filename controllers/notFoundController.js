@@ -1,7 +1,7 @@
 module.exports={
 	index:(req,res)=>{
 		res.status(404);
-		res.render('../views/notFound.ejs',
+		res.render('../public/views/notFound.ejs',
 			{	
 				title:'Nos perdimos Baka 😤💛',
 		        error:'Error 404',

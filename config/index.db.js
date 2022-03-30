@@ -10,13 +10,20 @@ var connection = mysql.createConnection({
 
 connection.connect(
 	(err)=>{
-		if(!err){
-			console.log('\x1b[1;32m','Connection Success !! ');
-		}else{
-			console.log(err);
+		switch(err == true){
+		case !err:
 			console.log('\x1b[1;31m','Error Catch !!');
+			break;
+		case err == true:
+			console.log('\x1b[1;32m','Connection Success !! ');
+			break;
+		default:
+			console.log('Default');
+			break;
 		}
+
 	}
+	
 );
 module.exports = connection;
 
