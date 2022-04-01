@@ -5,7 +5,7 @@ module.exports={
 			{	
 				title:'Nos perdimos Baka 😤💛',
 		        error:'Error 404',
-		        warning:'Esta pagina no existe por favor regrese.',
+		        warning:'Esta pagina no existe por favor regresar.',
 		        home:'/'
 			}
 		);
