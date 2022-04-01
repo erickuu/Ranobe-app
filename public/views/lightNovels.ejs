@@ -6,34 +6,50 @@
   <link rel="stylesheet" href="../stylesheets/main.bundle.css">
 	<title><%=title%></title>
 </head>
-<body class="bg-black">
+<body class="">
 <main>	
+
+  <div class="w-full h-auto ">
+    <a href="/">
+      <img src="../images/icon-flat.png" width="100px" alt="">
+    </a>
+  </div>
   <!-- Section about novels and downloads -->
   <section id="" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-20">
       <% for(let novels = 0 ; novels < data.length; novels++){%>         
       <!-- Card ITEMS -->
-        <div class="section__card flex flex-col w-full bg-white h-auto rounded-2xl">
+        <div class="section__card flex flex-col w-full bg-white h-auto border border-black overflow-hidden rounded-2xl">
           <!-- Card IMAGES -->
           <div class="card__img mr-3 w-full">
-            <img src="<%=data[novels].Image%>" class="w-full h-auto rounded"  alt="">
+            <img data-src="<%=data[novels].Image%>" src="" class="img w-full h-auto rounded-2xl"  alt="">
           </div>
           <!-- CARD INFORMATION -->
           <div class="card__info flex flex-col w-full h-full text-left pt-2 px-3 overflow-x-hidden overflow-y-auto">
             <h1><strong><%=data[novels].Name%></strong></h1>
             <p>Volumenes : <%=data[novels].Vols%></p>
             <p><span> <%=data[novels].Tag%></span></p>
-            <div class="w-full h-full mt-4 mb-3 flex flex-row">
-              <a href="<%=data[novels].Link%>" target="_blank" class=" h-20 px-2 pt-4  bg-yellow-300 hover:bg-yellow-700 mr-3 font-medium">Descargar +</a>
-              <a href="<%=data[novels].LinkTwo%>" target="_blank" class=" h-20 px-2 pt-4  bg-green-300 hover:bg-green-500 mr-3  font-medium">Descargar +</a>
+            <div class="w-full h-full mt-4 mb-3 flex flex-row justify-center items-center">
+              <a href="<%=data[novels].Link%>" target="_blank" class=" h-16 p-4  bg-yellow-300 hover:bg-yellow-700 mr-3 font-medium">Descargar +</a>
+              <a href="<%=data[novels].LinkTwo%>" target="_blank" class=" h-16 p-4 bg-green-300 hover:bg-green-500 mr-3  font-medium">Descargar +</a>
             </div>
           </div>
         </div>
       <%}%> 
   </section>
-   <div class="w-full h-auto flex flex-col justify-center items-center">
-      <img src="../images/fox-flat.png"  alt="fox">
-      <h1 class="text-3xl text-white font-semibold">FandomAnimes Community</h1>
-  </div>
+  <footer class="grid grid-cols-2 gap-2 bg-white mt-6 border border-black ">
+     <div class="w-full h-auto flex flex-col justify-center items-center p-10">
+        <img src="../images/fox-flat.png"  alt="fox">
+    </div>
+    <div class="p-10 w-full flex flex-col justify-center items-center text-center">
+        <h1 class="text-3xl  font-semibold">FandomAnimes Community</h1>
+        <h2 class="text-center font-medium">Copryright 2022 - 2023</h2>
+        <p>Derechos de novelas y contenido a sus respectivos autores, solo nos dedicamos a distribuir el contenido hecho por ellos de manera 100% gratuita. siempre podra contactarnos a traves de las redes sociales.</p>
+        <p>Contactar al +573148121439 .</p>
+        <p>Email : erickgraterolbarico@gmail.com .</p>
+        <p>FandomAnimesCommunity.blogspot.com .</p>
+    </div>
+  </footer>
 </main>
+<script type="text/javascript" src="../javascripts/lazy-loading.js"></script>
 </body>
 </html>

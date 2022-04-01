@@ -25,7 +25,7 @@ connection.connect(
 			break;
 		}
 
-	}
-	
+	}	
 );
+// connection.end();
 module.exports = connection;

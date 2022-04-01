@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section__card{
+	border: 1px solid black;
+}
+
+/* From cssbuttons.io by @adamgiebl */
+.buttonsito {
+ background: #FBCA1F;
+ font-family: inherit;
+ padding: 0.6em 1.3em;
+ position: sticky;
+ top: 50%;
+ font-weight: 900;
+ font-size: 18px;
+ border: 3px solid black;
+ border-radius: 0.4em;
+ box-shadow: 0.1em 0.1em;
+}
+
+.buttonsito:hover {
+ transform: translate(-0.05em, -0.05em);
+ box-shadow: 0.15em 0.15em;
+}
+
+.buttonsito:active {
+ transform: translate(0.05em, 0.05em);
+ box-shadow: 0.05em 0.05em;
+}
